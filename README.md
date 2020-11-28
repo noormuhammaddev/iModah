@@ -10,11 +10,16 @@ This is the robust, fully responsive static html assignment/demo. This assignmen
 
 ## How to run on local
 
+### Step 1 - Clone repo
 ```
 # Clone the repository by using the following command
 git clone git@github.com:noormuhammaddev/iModah.git
 ```
 
+### Step 2
+```
+Open index.html file in any browser
+```
 
 
 ## How to configure SCSS and compile to default.min.css
