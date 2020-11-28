@@ -53,4 +53,4 @@ iModah -> assets -> dist -> css -> default.min.css
 
 
 ## General Information
-The google recaptcha is not implemented on static html so I did not configure that under contact form section.
+The google recaptcha does not work on local so I did not configure that under contact form section.
