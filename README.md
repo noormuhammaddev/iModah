@@ -27,7 +27,7 @@ gulp -v
 
 # if gulp already installed you will get the version of gulp
 
-# If gulp installed then go to step 2 otherwise follow the following instructions
+# If gulp installed then go to step 2 otherwise run the following command
 npm install gulp -g
 ```
 
