@@ -1,0 +1,24 @@
+.form-control {
+  height: 40px;
+  border: 0;
+  font-size: 14px;
+  @include border-radius(8px, 8px, 8px, 8px);
+  @include box-shadow( 0px, 4px, 16px, rgba(207, 240, 254, 0.5)); 
+  
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey;
+  }
+  
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $grey;
+  }
+  
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $grey;
+  }
+}
+
+
+textarea.form-control {
+  height: 120px;
+}

@@ -1,0 +1,149 @@
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  
+  .header-inner-wrapper {
+    max-width: 1278px;
+    padding: 40px 15px;
+    margin: 0 auto;
+
+    .logo {
+      max-width: 200px;
+      z-index: 1;
+
+      @include breakpoint(md) {
+        width: 140px;
+        height: 40px;
+      }
+    }
+
+    .nav-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50px;
+
+      @include breakpoint(md) {
+        top: 44px;
+      }
+
+      @include breakpoint(sm) {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        background: #fff;
+        display: none;
+      }
+
+      nav {
+        text-align: center;
+
+        @include breakpoint(sm) { 
+          padding-top: 150px;
+          text-align: right;
+          padding-right: 20px;
+        }
+        
+        ul {
+          li {
+
+            @include breakpoint(sm) { 
+              display: block;
+            }
+
+            a {
+              font-size: 16px;
+              padding: 0 16px;
+
+              @include breakpoint(sm) { 
+                display: inline-block;
+                font-size: 24px;
+                padding: 10px 16px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+
+      .language {
+        position: absolute;
+        right: 30px;
+        top: 0;
+
+        @include breakpoint(sm) {
+          top: 108px;
+        }
+
+        .dropdown {
+          button {
+            background-color: transparent;
+            background-image: url(../images/icon-globe.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            border: 0;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:after {
+              font-size: 0;
+              background-image: url(../images/icon-angle-down.svg);
+              width: 8px;
+              height: 6px;
+              margin-left: 2px;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .dropdown-menu a {
+            font-size: 14px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .toggle-nav {
+    position: absolute;
+    right: 30px;
+    border: 0;
+    background-color: transparent;
+    top: 49px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &.sticky {
+    background-color: $white;
+    @include box-shadow(0px, 0px, 3px, rgba(207,240,254, 1));
+    
+    .toggle-nav {
+      top: 24px;
+    }
+
+    .logo {
+      @include breakpoint(md) {
+        padding-top: 7px;
+      }
+    }
+
+    .header-inner-wrapper {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .nav-wrapper {
+        top: 24px;
+      }
+    }
+  }
+}

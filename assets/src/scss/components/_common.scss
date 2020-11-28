@@ -1,0 +1,104 @@
+* {
+  position: relative;
+  transition: 0.3s ease all;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: $default;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+a {
+  color: $default;
+  display: inline-block;
+  
+  &:hover {
+    text-decoration: none;
+    color: $default;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.has-sky-blue-bg {
+  background-color: $sky-blue;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-heading {
+  max-width: 612px;
+  margin: 0 auto 40px;
+
+  .heading {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 8px;
+
+    @include breakpoint(md) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+
+    @include breakpoint(md) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &.sm {
+    max-width: 348px;
+
+    .heading {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.medium-wrapper {
+  max-width: 930px;
+  margin: 0 auto;
+}
+
+.wave-seperator {
+  background-image: url(../images/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 189px;
+
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

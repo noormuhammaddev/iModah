@@ -1,0 +1,26 @@
+footer {
+  padding: 48px 0;
+
+  @include breakpoint(sm) {
+    padding: 40px 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(sm) {
+      display: block;
+      text-align: center;
+    }
+
+    .item {
+      flex: 1;
+
+      @include breakpoint(sm) {
+        margin-top: 56px;
+      }
+    }
+
+  }
+}

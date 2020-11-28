@@ -1,0 +1,61 @@
+.form-group {
+  margin-bottom: 24px;
+}
+
+.get-in-touch {
+  overflow-x: hidden;
+
+  .form-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 131px 15px 0;
+  }
+}
+.contact-wrapper {
+  max-width: 688px;
+  height: 688px;
+  margin: 0 auto;
+
+  .circle-object {
+    position: absolute;
+    width: 688px;
+    height: 688px;
+    background-color: $light-blue;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    @include border-radius(100%, 100%, 100%, 100%);
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      background-color: $sky-blue-2;
+      width: 176px;
+      height: 176px;
+      top: 122px;
+      left: -60px;
+      @include border-radius(100%, 100%, 100%, 100%);
+
+      @include breakpoint(sm) {
+        top: 0;
+        left: 50px;
+      }
+    }
+
+    &:after {
+      width: 80px;
+      height: 80px;
+      left: auto;
+      top: auto;
+      bottom: 45px;
+      right: 74px;
+
+      @include breakpoint(sm) {
+        bottom: 0;
+        right: 127px;
+      }
+    }
+  }
+}
+
+

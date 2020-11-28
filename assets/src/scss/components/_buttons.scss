@@ -1,0 +1,10 @@
+.btn {
+  padding: 16px 48px;
+  border: 0;
+  font-size: 14px;
+  font-weight: 600;
+
+  &.btn-primary {
+    background-color: $blue;
+  }
+}
