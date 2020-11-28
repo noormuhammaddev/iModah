@@ -13,7 +13,7 @@ This is the robust, fully responsive static html assignment/demo. This assignmen
 # Clone the repository by using the following command
 git clone git@github.com:noormuhammaddev/iModah.git
 
-Open index.html file in any browser
+# Open index.html file in any browser
 ```
 
 
