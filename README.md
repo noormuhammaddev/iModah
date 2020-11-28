@@ -9,9 +9,8 @@ This is the robust, fully responsive static html assignment/demo. This assignmen
 - Gulp
 
 ## Demo
-```
-http://imodah.noormuhammad.net/
-```
+[a http://imodah.noormuhammad.net/](http://imodah.noormuhammad.net/)
+
 ## How to run on local
 
 ```
