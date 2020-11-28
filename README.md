@@ -1,6 +1,7 @@
 # iModah HTML
 
-This is the robust, fully responsive static html assignment/demo. This assignment consisting static html along with the following stuff:
+This is the robust, fully responsive static html assignment/demo. This assignment has been developed by using the following stuff:
+- HTML5
 - SCSS
 - Bootstrap
 - Javascript
