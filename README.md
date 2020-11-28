@@ -6,6 +6,7 @@ This is the robust, fully responsive static html assignment/demo. This assignmen
 - Bootstrap
 - Javascript
 - jQuery
+- Gulp
 
 ## How to run on local
 
