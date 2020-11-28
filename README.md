@@ -1,44 +1,59 @@
 # iModah HTML
 
-This is the robust, fully featured React App Artist search demo. The demo allows the visitor to search through node-modules. This README is a continuation of the article - pull down the master branch to complete code.
-
-This is the robust, fully responsive static html assignment/demo. This assignment consisting static html along with the following stuff:
+This is the robust, fully responsive static html assignment/demo. This assignment has been developed by using the following stuff:
+- HTML5
 - SCSS
 - Bootstrap
 - Javascript
 - jQuery
+- Gulp
+
+## Live Demo
+[http://imodah.noormuhammad.net/](http://imodah.noormuhammad.net/)
 
 ## How to run on local
 
 ```
 # Clone the repository by using the following command
 git clone git@github.com:noormuhammaddev/iModah.git
+
+# Open index.html file in any browser
 ```
 
 
+## SCSS setup
 
-## How to configure SCSS and compile to default.min.css
-
-### Step 1
-
+### Step 1 - Gulp installation
 ```
-# Clone the repository
-git clone https://github.com/links2design/artists.git
-cd artists
+# Open terminal/cmd
+# Check if you have gulp installed on your system
+gulp -v
+
+# if gulp already installed you will get the version of gulp
+
+# If gulp installed then go to step 2 otherwise run the following command
+npm install gulp -g
+```
+
+### Step 2 - SCSS setup
+```
+# Open directory (iModah) in terminal/cmd
+# Run the following command:
+cd assets
 
 # Install dependencies
 npm install
-
-# start application
-npm start
 ```
 
-## Features
+### Step 3 - Compile SCSS
+```
+# To compile scss files run the following command
+gulp sassCompile
 
-1. Search artists
-2. Events against searched artist
+# You may check the compiled default.min.css in to the following directory
+iModah -> assets -> dist -> css -> default.min.css
+```
+
 
 ## General Information
-I have used some 3rd party libraries/npm packages to make my code more efficient like 
-1. `Formik` to mantain forms properties
-2. `Yup` to create validation for form elements
+The google recaptcha does not work on local so I did not configure that under contact form section.
